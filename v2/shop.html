@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحزم لوفينغ هومز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="header-content">
+            <div id="clock">00:00:00</div>
+           
+            <img src="images/PET SH P (1).png" class="main-logo" alt="لوجو">
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="side-bar">
+            <nav class="side-menu">
+                <a href="index.html" class="menu-item">الرئيسية</a>
+                <a href="facilities.html" class="menu-item">معلومات عن عن ماذا نقدم </a>
+                <a href="about.html" class="menu-item">المرافق</a>
+                <a href="shop.html" class="menu-item active">الحزم</a>
+                <a href="packages.html" class="menu-item">المتجر</a>
+                <a href="contact.html" class="menu-item">تواصل معنا</a>
+            </nav>
+        </aside>
+
+        <main class="content-body">
+            <div class="white-card">
+                <h1 class="page-title">حزم الإقامة والترفيه</h1>
+                
+                <div class="packages-container">
+                    <div class="p-card gold-border">
+                        <div class="badge">المميزة</div>
+                        <h2>الباقة الفاخرة</h2>
+                        <ul>
+                            <li><i class="fas fa-paw"></i> 4 أنشطة يومياً</li>
+                            <li><i class="fas fa-leaf"></i> مساحة عشب خاصة</li>
+                            <li><i class="fas fa-camera"></i> صور يومية</li>
+                            <li><i class="fas fa-gift"></i> مكافآت خاصة</li>
+                        </ul>
+                        <button class="btn-order">اختيار الباقة</button>
+                    </div>
+
+                    <div class="p-card">
+                        <h2>الباقة الكلاسيكية</h2>
+                        <ul>
+                            <li><i class="fas fa-paw"></i> 3 أنشطة يومياً</li>
+                            <li><i class="fas fa-home"></i> لعب داخلي</li>
+                            <li><i class="fas fa-couch"></i> منطقة استرخاء</li>
+                            <li><i class="fas fa-cut"></i> جلسة حلاقة</li>
+                        </ul>
+                        <button class="btn-order">اختيار الباقة</button>
+                    </div>
+
+                    <div class="p-card">
+                        <h2>باقة اليوم</h2>
+                        <ul>
+                            <li><i class="fas fa-paw"></i> مشي مرتين</li>
+                            <li><i class="fas fa-tree"></i> لعب خارجي</li>
+                            <li><i class="fas fa-running"></i> مسار رشاقة</li>
+                            <li><i class="fas fa-box"></i> حفر في الرمل</li>
+                        </ul>
+                        <button class="btn-order">اختيار الباقة</button>
+                    </div>
+                </div>
+
+                <p class="note-text">* تتوفر حزم مخصصة للإقامات الطويلة، يرجى التواصل معنا.</p>
+            </div>
+        </main>
+    </div>
+
+     <div class="accessibility-bar">
+        <button onclick="zoomIn()" title="تكبير" class="accessibility-bar-button">A+</button>
+        <button onclick="zoomOut()" title="تصغير" class="accessibility-bar-button">A-</button>
+        <div class="color-picker-wrapper">
+            <input type="color" id="bgPicker" onchange="changeTheme()" title="اختر لون الخلفية">
+        </div>
+    </div>
+        <script src="js/script.js"></script>
+</body>
+</html>

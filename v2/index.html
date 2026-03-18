@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحيوانات الاليفة </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" >
+
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="header-content">
+            <img src="images/PET SH P (1).png" class="main-logo" alt="لوجو">
+            
+            
+            
+            <div id="clock">00:00:00</div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="side-bar">
+            <nav class="side-menu">
+                <a href="index.html" class="menu-item">الرئيسية</a>
+                <a href="facilities.html" class="menu-item">معلومات عن ماذا نقدم </a>
+                <a href="about.html" class="menu-item">المرافق</a>
+                <a href="shop.html" class="menu-item">الحزم</a>
+                <a href="packages.html" class="menu-item">المتجر</a>
+                <a href="contact.html" class="menu-item">تواصل معنا</a>
+            </nav>
+        </aside>
+
+        <main class="content-body">
+            <div class="image-box">
+                <img src="images/ing.jpg" alt="صورة المتجر">
+            </div>
+
+            <section class="info-text-centered">
+                <h2>تجربة رعاية متكاملة</h2>
+                <p>نحن نقدم أفضل المنتجات والخدمات لضمان سعادة وصحة أصدقائكم الأليفة.</p>
+                <div class="video-box">
+                    <video controls>
+                        <source src="videos/WhatsApp Video 2026-03-06 at 1.48.00 PM.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="full-footer">
+        <div class="social-container">
+            <a href="https://www.facebook.com" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.twitter.com" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    <div class="accessibility-bar">
+        <button onclick="zoomIn()" title="تكبير" class="accessibility-bar-button">A+</button>
+        <button onclick="zoomOut()" title="تصغير" class="accessibility-bar-button">A-</button>
+        <div class="color-picker-wrapper">
+            <input type="color" id="bgPicker" onchange="changeTheme()" title="اختر لون الخلفية">
+        </div>
+    </div>
+        <script src="js/script.js"></script>
+
+</body>
+</html>

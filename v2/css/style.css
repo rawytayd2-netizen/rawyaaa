@@ -1,0 +1,467 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#fff;
+font-family:Arial,sans-serif;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+/* HEADER */
+
+.top-bar{
+background:#84B2F6;
+padding:15px 0;
+width:100%;
+position:relative;
+}
+
+.header-content{
+display:flex;
+justify-content:space-around;
+align-items:center;
+max-width:1400px;
+margin:auto;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.main-logo{
+height:90px;
+width:90px;
+object-fit:cover;
+border-radius:50%;
+border:3px solid #fff;
+background:#fff;
+}
+
+/* ACCESSIBILITY */
+
+.accessibility-bar{
+position:absolute;
+top:10px;
+right:15px;
+display:flex;
+gap:10px;
+}
+
+.accessibility-bar button,
+#bgPicker{
+width:40px;
+height:40px;
+border-radius:50%;
+border:2px solid #84B2F6;
+background:#fff;
+cursor:pointer;
+}
+
+/* LAYOUT */
+
+.main-wrapper{
+display:flex;
+flex:1;
+}
+
+/* SIDEBAR */
+
+.side-bar{
+background:#84B2F6;
+width:240px;
+padding:40px 15px;
+}
+
+.side-menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+/* MENU */
+
+.menu-item{
+display:block;
+background:#fff;
+color:#333;
+text-decoration:none;
+padding:15px;
+text-align:center;
+font-weight:bold;
+border-radius:12px;
+transition:0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active{
+background:#000;
+color:#fff;
+}
+
+/* CONTENT */
+
+.content-body{
+flex:1;
+padding:40px;
+}
+
+/* IMAGE */
+
+.image-box img{
+width:100%;
+max-height:800px;
+object-fit:cover;
+border-radius:20px;
+}
+
+/* TEXT */
+
+.info-text-centered{
+margin-top:25px;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+
+.info-text-centered h2{
+margin-bottom:15px;
+color:#84B2F6;
+}
+
+/* VIDEO */
+
+.video-box{
+margin-top:30px;
+}
+
+.video-box video{
+width:100%;
+border-radius:30px;
+}
+
+/* FOOTER */
+
+.full-footer{
+background:#84B2F6;
+padding:30px 0;
+width:100%;
+margin-top:auto;
+}
+
+.social-container{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+.social-btn{
+width:40px;
+height:40px;
+background:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#333;
+text-decoration:none;
+transition:.3s;
+}
+
+.social-btn:hover{
+transform:scale(1.1);
+color:#84B2F6;
+}
+
+/* ===================== */
+/* SHOP GRID (المتجر) */
+/* ===================== */
+
+.grid-facilities{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:0 auto;
+padding:20px 0;
+}
+
+/* CARD */
+
+.card{
+background:#fff;
+border-radius:15px;
+border:1px solid #eee;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+transition:0.3s;
+max-width:300px;
+margin:auto;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-body{
+padding:20px;
+display:flex;
+flex-direction:column;
+flex-grow:1;
+text-align:center;
+}
+
+.card-body h3{
+color:#f6cc84;
+margin-bottom:10px;
+}
+
+.card-body p{
+color:#666;
+margin-bottom:20px;
+flex-grow:1;
+}
+
+/* BUTTON */
+
+.gold-btn{
+background:#f6cc84;
+color:#333;
+border:none;
+padding:14px;
+font-weight:bold;
+border-radius:50px;
+cursor:pointer;
+transition:.3s;
+}
+
+.gold-btn:hover{
+background:#eed779;
+color:#fff;
+}
+
+.gold-btn.add-to-cart{
+width:100%;
+background:#fff;
+color:#f6cc84;
+border:2px solid #f6cc84;
+}
+
+.gold-btn.add-to-cart:hover{
+background:#f6cc84;
+color:#fff;
+}
+
+/* ABOUT PAGE */
+
+.centered-content{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+}
+
+.about-text-box{
+max-width:900px;
+text-align:center;
+padding:40px;
+background:#fff;
+box-shadow:0 10px 40px rgba(0,0,0,0.05);
+border-radius:20px;
+}
+
+.large-paw{
+font-size:3.5rem;
+color:#f6cc84;
+margin-bottom:20px;
+}
+
+.gold-line{
+width:80px;
+height:4px;
+background:#f6cc84;
+border:none;
+margin:20px auto;
+border-radius:10px;
+}
+
+/* ===================== */
+/* PACKAGES */
+/* ===================== */
+
+.packages-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+max-width:1100px;
+margin:0 auto;
+}
+
+.p-card{
+flex:1 1 300px;
+max-width:320px;
+border:1px solid #eee;
+border-radius:20px;
+padding:30px 15px;
+text-align:center;
+transition:.3s;
+position:relative;
+background:#fff;
+}
+
+.p-card:hover{
+transform:translateY(-5px);
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.gold-border{
+border:2px solid #f6cc84;
+background:#fffdf9;
+}
+
+.badge{
+position:absolute;
+top:-12px;
+left:50%;
+transform:translateX(-50%);
+background:#f6cc84;
+padding:5px 15px;
+border-radius:10px;
+font-size:.8rem;
+font-weight:bold;
+}
+
+.btn-order{
+width:100%;
+padding:12px;
+border:1px solid #f6cc84;
+background:transparent;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-order:hover{
+background:#f6cc84;
+color:#fff;
+}
+
+/* ===================== */
+/* FACILITIES */
+/* ===================== */
+
+.white-card{
+background:#fff;
+width:95%;
+border-radius:30px;
+padding:50px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+margin:auto;
+}
+
+.facilities-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.f-box{
+border:1px solid #f0f0f0;
+padding:20px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+/* CONTACT */
+
+.contact-wrapper{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:60px 20px;
+}
+
+.form-container{
+background:#fff;
+width:100%;
+max-width:700px;
+padding:50px;
+border-radius:25px;
+box-shadow:0 15px 50px rgba(0,0,0,.05);
+}
+
+.form-group{
+margin-bottom:25px;
+}
+
+.form-group input,
+.form-group textarea{
+width:100%;
+padding:15px;
+border:2px solid #eee;
+border-radius:12px;
+outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+border-color:#f6cc84;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1024px){
+
+.grid-facilities{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.main-wrapper{
+flex-direction:column;
+}
+
+.side-bar{
+width:100%;
+}
+
+.side-menu{
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.menu-item{
+flex:1 1 40%;
+font-size:.9rem;
+}
+
+.grid-facilities{
+grid-template-columns:1fr;
+}
+
+.main-logo{
+height:70px;
+width:70px;
+}
+
+}

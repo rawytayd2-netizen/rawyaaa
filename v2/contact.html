@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا  لوفينغ هومز</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="contact-page">
+    
+    <header class="top-bar">
+        <div class="header-content">
+            <img src="images/PET SH P (1).png" class="main-logo" alt="لوجو">
+           
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="side-bar">
+            <nav class="side-menu">
+                <a href="index.html" class="menu-item">الرئيسية</a>
+                <a href="facilities.html" class="menu-item">معلومات عن ماذا نقدم </a>
+                <a href="about.html" class="menu-item">المرافق</a>
+                <a href="shop.html" class="menu-item">الحزم</a>
+                <a href="packages.html" class="menu-item">المتجر</a>
+                <a href="contact.html" class="menu-item active">تواصل معنا</a>
+            </nav>
+        </aside>
+
+        <main class="content-body">
+            <div class="contact-wrapper">
+                <div class="form-container">
+                    <i class="fas fa-envelope-open-text" style="font-size: 3rem; color: #f6cc84; margin-bottom: 10px;"></i>
+                    <h2 style="text-align: center; color: #ebc159; margin-bottom: 20px;">تواصل معنا</h2>
+                    <p style="text-align: center; color: #f6cf59; margin-bottom: 30px;">يسعدنا الرد على استفساراتكم واقتراحاتكم في أي وقت.</p>
+                    
+                    <form id="contactForm" onsubmit="return checkForm(event)">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> الاسم الكامل</label>
+                            <input type="text" name="name" id="userName" required placeholder="أدخل اسمك">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                            <input type="email" name="email" id="userEmail" required placeholder="example@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+                            <input type="tel" name="phone" id="usertel" placeholder="05X XXX XXXX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-comment-dots"></i> الرسالة</label>
+                            <textarea name="message" id="userMsg" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="gold-btn" style="width: 100%; padding: 15px; font-size: 1.1rem; border-radius: 10px; cursor: pointer;">
+                            <i class="fas fa-paper-plane"></i> إرسال الطلب
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="full-footer">
+        <div class="social-container">
+            <a href="https://www.facebook.com" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com" class="social-btn"><i class="fab fa-instagram"></i></a>
+             <a href="https://www.twitter.com" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p style="text-align: center; margin-top: 15px; color: #333; font-weight: bold;" >جميع الحقوق محفوظة لمتجر  لوفينغ هومز  &copy; 2026</p>
+
+    </footer>
+    <div class="accessibility-bar">
+        <button onclick="zoomIn()" title="تكبير" class="accessibility-bar-button">A+</button>
+        <button onclick="zoomOut()" title="تصغير" class="accessibility-bar-button">A-</button>
+        <div class="color-picker-wrapper">
+            <input type="color" id="bgPicker" onchange="changeTheme()" title="اختر لون الخلفية">
+        </div>
+    </div>
+        <script src="js/script.js"></script>
+
+   
+</body>
+</html>
